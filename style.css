@@ -1,0 +1,181 @@
+
+
+body {
+  background: #1f253d;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+p {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+a:hover {
+  text-decoration: underline;
+  color: #11a8ab;
+}
+
+h1,
+h2,
+p,
+a,
+span {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+.container {
+  margin: 25px 25px 0 0;
+  background: #394264;
+  border-radius: 5px;
+  float: left;
+  width: 600px;
+  overflow: hidden;
+  
+}
+/******************************************** LEFT CONTAINER *****************************************/
+
+.line-chart-block {
+  height: 400px;
+}
+.line-chart {
+  height: 250px;
+  background: #11a8ab;
+  padding: 0px 100px 20px 20px  ;
+}
+
+
+
+/******************************************
+Line Graph
+******************************************/
+
+.graph {
+  padding: 20px 10px 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  font-size: 80%;
+}
+.graph span {
+  display: block;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2rem;
+  height: 0;
+  border-top: 2px solid;
+  transform-origin: left center;
+}
+.graph span > span {
+  left: 100%;
+  bottom: 0;
+}
+[data-valor="1"] {
+  width: 35px;
+  transform: rotate(-0.5deg);
+}
+[data-valor="2"] {
+  width: 38px;
+  transform: rotate(-2deg);
+}
+[data-valor="3"] {
+  width: 38px;
+  transform: rotate(-4deg);
+}
+[data-valor="4"] {
+  width: 38px;
+  transform: rotate(-12deg);
+}
+[data-valor="5"] {
+  width: 40px;
+  transform: rotate(11deg);
+}
+[data-valor="6"] {
+  width: 36px;
+  transform: rotate(1deg);
+}
+[data-valor="7"] {
+  width: 45px;
+  transform: rotate(1deg);
+}
+[data-valor="8"] {
+  width: 45px;
+  transform: rotate(-1deg);
+}
+[data-valor="9"] {
+  width: 45px;
+  transform: rotate(-1deg);
+}
+[data-valor="10"] {
+  width: 45px;
+  transform: rotate(-1deg);
+}
+[data-valor="11"] {
+  width: 45px;
+  transform: rotate(-1deg);
+}
+[data-valor="12"] {
+  width: 45px;
+  transform: rotate(-1deg);
+}
+
+[data-valor]:before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: -4px;
+  bottom: -3px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+[class^="axe-"] {
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem 1rem 0 2rem;
+  height: 80%;
+}
+.axe-x {
+  height: 2.5rem;
+}
+.axe-y li {
+  height: 20%;
+  border-top: 1px solid #777;
+}
+[data-axeY]:before {
+  content: attr(data-axeY);
+  display: inline-block;
+  width: 35px;
+  text-align: right;
+  line-height: 0;
+  position: relative;
+  left: -2.5rem;
+  top: -0.5rem;
+}
+.axe-x li {
+  width: 16.66%;
+  float: left;
+  text-align: center;
+}
