@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: Gradient 6s ease infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../corona1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner_tr {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../corona.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner_pr {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../corona2.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: rgb(0, 0, 0);
+}
+.textstyle4 {
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  padding: 10px;
+  height: 60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.police2 {
+  color: #000;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 6vw;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+.container {
+  position: relative;
+  height: 600px;
+  margin: 50px;
+  bottom: 0;
+  padding: 0% 10%;
+}
+
+.container .box {
+  
+  
+  width: 100%;
+  background: #fff;
+  margin: 10px 0px ;
+  padding:10px 30px ;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 10px solid rgb(255, 255, 255);
+}
+
+.box td {
+  padding: 20px;
+}
+
+
